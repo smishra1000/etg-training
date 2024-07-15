@@ -1,0 +1,22 @@
+// what is react?
+
+<h1>hello good morning</h1>
+
+function greet(){
+    return <h1>heelo good moring</h1>
+}
+
+greet
+
+jsx--
+
+const greet = "hello"
+
+const greet = <h1>hello<h1>
+
+1> you will crete h1 tag 
+2>text conet hello 
+
+
+
+

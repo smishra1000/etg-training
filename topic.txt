@@ -1,0 +1,52 @@
+Days
+
+Course Content
+
+Day1
+
+Single-page, advance js
+clouser, this hoisting, opps, Intro ,
+
+Day 2
+JSX, Virtual DOM internal of Vdom (Quick coverage topics)
+Components, Class Component, Component Constructor
+
+Day 3
+
+Props, States, Component Lifecycle
+
+Day 4
+
+Hooks--useState, useEffect, useContext, useRef, useReducer
+
+Day 5
+
+React Events,React Forms
+
+Day 6
+
+Routing,React-router,Nested Routes
+
+Day 7
+
+API integration using fetch, axios
+
+Day 8
+
+Need of Redux, What is Redux?, Redux Architecture, Redux Action
+Redux Reducers
+Redux Store
+Principles of Redux
+
+Day 9
+
+Introduction of Props validation with data types.
+Async operation using redux thunk
+
+Day 10
+
+Project setup; component, Project: Ecommerce Implementation/ Nodejs express setup
+
+Day 11
+
+Performance Optimization React Apps
