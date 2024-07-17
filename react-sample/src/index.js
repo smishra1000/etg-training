@@ -10,7 +10,7 @@ root.render(
     <App />
    //</React.StrictMode>
 );
-setInterval(()=>{
-   root.unmount();
-},4000)
+// setInterval(()=>{
+//    root.unmount();
+// },4000)
 
