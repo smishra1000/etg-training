@@ -9,9 +9,15 @@ import User from './functional-comp/User';
 import UseStateHookDemo from './functional-comp/Hooks/UseStateHookDemo';
 import UseEffectHookDemo from './functional-comp/Hooks/UseEffectHookDemo';
 import Employees from './functional-comp/Hooks/Employees';
+import UseReducerHookDemo from './functional-comp/Hooks/UseReducerHookDemo';
+import Home from './functional-comp/Hooks/UseConTextHookDemo';
+import { createContext, useState } from 'react';
 // import Resume2 from "./functional-comp/Resume"
 
+export const AgeContext = createContext()
+
 function App() {
+  const [age,setAge] = useState(60)
   return (
     <div className="App">
       {/* <Resume/> */}
@@ -26,7 +32,12 @@ function App() {
       {/* <User/> */}
       {/* <UseStateHookDemo/> */}
       {/* <UseEffectHookDemo/> */}
-      <Employees/>
+      {/* <Employees/> */}
+      {/* <UseReducerHookDemo/> */}
+      <AgeContext.Provider value={age}>
+        <Home/>
+      </AgeContext.Provider>
+    
     </div>
   );
 }
