@@ -1,9 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import CourseList from "./CourseList"
 
 function AddCourse() {
     const [course, setCourse] = useState({ cname: '', cdesc: "", trainer: "" })
     const [courseList,setCourseList] = useState([])
+const myTrainers = "sameer selected"
+    const [selectedTrainer,seTSelectedTrainers] = useState()
 
     // const onCourseNameChange = (e)=>{
     //         setCourse({...course,cname:e.target.value})
@@ -20,6 +22,11 @@ function AddCourse() {
         console.log(e.target.name,e.target.value)
         setCourse({...course,[e.target.name]:e.target.value})
      }
+     useEffect(()=>{
+        if(course.cname==="react"){
+            setCourse({...course,trainer:myTrainers})
+        }
+     },[course.cname])
      const createCourse = (e)=>{
         e.preventDefault();
         console.log(course)
@@ -40,6 +47,7 @@ function AddCourse() {
                 <label>Trainer</label>
                 <input type="text" value={course.trainer} onChange={(e) => onChangeFiled(e)} name="trainer"/>
                 <button type="submit">create Course</button>
+            
             </form>
             <CourseList courseList={courseList}/>
         </div>

@@ -8,6 +8,7 @@ function Header() {
                 <Link to="employee"><li>Employee</li></Link>
                 <Link to="addcourse"><li>Course Management</li></Link>
                 <Link to="paynow"><li>paynow</li></Link>
+                <Link to="tasks"><li>Task</li></Link>
             </ul>
         </div>
     )

@@ -21,13 +21,15 @@ import Employee from './Pages/Employee';
 import ProductsList from './Pages/Products';
 import Header from './Pages/Header';
 import AddCourse from './Pages/course/AddCourse';
+import EmployeeList from './Pages/EmployeeList';
+import Task from './Pages/Task';
 
 export const AgeContext = createContext()
 
 
 
 function App() {
-  const [age,setAge] = useState(60)
+  // const [age,setAge] = useState(60)
   return (
     <div className="App">
 
@@ -56,8 +58,11 @@ function App() {
        <Header/>
 
     <Routes>
-      <Route path="employee" element={<Employee/>}></Route>
+      <Route path="employee" element={<Employee/>}>
+        <Route path="/employee/list" element={<EmployeeList/>}></Route>
+      </Route>
       <Route path="addcourse" element={<AddCourse/>}></Route>
+      <Route path="tasks" element={<Task/>}></Route>
       <Route path="products/:id" element={<ProductsList/>}></Route>
     </Routes>
     </BrowserRouter>
