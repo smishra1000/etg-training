@@ -9,6 +9,8 @@ function Header() {
                 <Link to="addcourse"><li>Course Management</li></Link>
                 <Link to="paynow"><li>paynow</li></Link>
                 <Link to="tasks"><li>Task</li></Link>
+                <Link to="userefhook"><li>use ref</li></Link>
+                <Link to="eventhandler"><li>Event Handler</li></Link>
             </ul>
         </div>
     )

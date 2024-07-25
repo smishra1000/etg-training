@@ -23,6 +23,8 @@ import Header from './Pages/Header';
 import AddCourse from './Pages/course/AddCourse';
 import EmployeeList from './Pages/EmployeeList';
 import Task from './Pages/Task';
+import EventHandler from './functional-comp/Hooks/EventHandler';
+import UseRefHookDemo from './functional-comp/Hooks/UseRefHookDemo';
 
 export const AgeContext = createContext()
 
@@ -63,6 +65,8 @@ function App() {
       </Route>
       <Route path="addcourse" element={<AddCourse/>}></Route>
       <Route path="tasks" element={<Task/>}></Route>
+      <Route path="eventhandler" element={<EventHandler/>}></Route>
+      <Route path="userefhook" element={<UseRefHookDemo/>}></Route>
       <Route path="products/:id" element={<ProductsList/>}></Route>
     </Routes>
     </BrowserRouter>
