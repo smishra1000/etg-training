@@ -25,6 +25,10 @@ import EmployeeList from './Pages/EmployeeList';
 import Task from './Pages/Task';
 import EventHandler from './functional-comp/Hooks/EventHandler';
 import UseRefHookDemo from './functional-comp/Hooks/UseRefHookDemo';
+import ForwardParent from './functional-comp/Hooks/ForwardRefDemo';
+import ParentForm from './functional-comp/Hooks/ParentForm';
+import UsersWithAxios from './functional-comp/Hooks/UsersWithAxios';
+import RouterHooksDemo from './functional-comp/Hooks/RouterHooksDemo';
 
 export const AgeContext = createContext()
 
@@ -68,6 +72,11 @@ function App() {
       <Route path="eventhandler" element={<EventHandler/>}></Route>
       <Route path="userefhook" element={<UseRefHookDemo/>}></Route>
       <Route path="products/:id" element={<ProductsList/>}></Route>
+      <Route path="forwardref" element={<ForwardParent/>}></Route>
+      <Route path="forwardref2" element={<ParentForm/>}></Route>
+      {/* <Route path="axiosdemo" element={<UsersWithAxios/>}></Route> */}
+      <Route path="routerhooks/:id/:age" element={<RouterHooksDemo/>}></Route>
+      <Route path="useEffect" element={<UseEffectHookDemo/>}></Route>
     </Routes>
     </BrowserRouter>
     

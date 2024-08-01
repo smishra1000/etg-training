@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react"
+import { useState,useEffect, useLayoutEffect } from "react"
 function UseEffectHookDemo(){
     const [count,setCount] = useState(0)
     const [age,setAge] = useState(40)
@@ -7,6 +7,10 @@ function UseEffectHookDemo(){
     useEffect(()=>{
         console.log("1st version of effect; will call in each render");
     })
+
+    useLayoutEffect(()=>{
+        console.log("i am use layout effect")
+    },[])
 
     // 2nd version of useEffect will call on very first time--first render
 

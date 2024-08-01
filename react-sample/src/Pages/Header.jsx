@@ -11,6 +11,11 @@ function Header() {
                 <Link to="tasks"><li>Task</li></Link>
                 <Link to="userefhook"><li>use ref</li></Link>
                 <Link to="eventhandler"><li>Event Handler</li></Link>
+                <Link to="forwardref"><li>Forward ref</li></Link>
+                <Link to="forwardref2"><li>Forward ref2</li></Link>
+                {/* <Link to="axiosdemo"><li>Axios demo</li></Link> */}
+                <Link to="routerhooks/:id/:age"><li>Router Hooks</li></Link>
+                <Link to="useEffect"><li>efect hook</li></Link>
             </ul>
         </div>
     )

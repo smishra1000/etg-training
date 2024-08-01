@@ -1,8 +1,11 @@
 import { Outlet,Link } from "react-router-dom"
 import EmployeeList from "./EmployeeList"
 import UserData from "./UserData"
+import { useLocation } from "react-router-dom"
 
 function Employee(){
+    const location = useLocation()
+    console.log(location)
     return(
         <div>
             <h3>employee componenet</h3>
