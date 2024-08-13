@@ -29,6 +29,7 @@ import ForwardParent from './functional-comp/Hooks/ForwardRefDemo';
 import ParentForm from './functional-comp/Hooks/ParentForm';
 import UsersWithAxios from './functional-comp/Hooks/UsersWithAxios';
 import RouterHooksDemo from './functional-comp/Hooks/RouterHooksDemo';
+import AutoCompleteAddress from './functional-comp/AutoCompleteAddress';
 
 export const AgeContext = createContext()
 
@@ -77,6 +78,7 @@ function App() {
       {/* <Route path="axiosdemo" element={<UsersWithAxios/>}></Route> */}
       <Route path="routerhooks/:id/:age" element={<RouterHooksDemo/>}></Route>
       <Route path="useEffect" element={<UseEffectHookDemo/>}></Route>
+      <Route path="autocomplete" element={<AutoCompleteAddress/>}></Route>
     </Routes>
     </BrowserRouter>
     

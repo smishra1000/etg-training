@@ -16,6 +16,7 @@ function Header() {
                 {/* <Link to="axiosdemo"><li>Axios demo</li></Link> */}
                 <Link to="routerhooks/:id/:age"><li>Router Hooks</li></Link>
                 <Link to="useEffect"><li>efect hook</li></Link>
+                <Link to="autocomplete"><li>Auto Complete</li></Link>
             </ul>
         </div>
     )
